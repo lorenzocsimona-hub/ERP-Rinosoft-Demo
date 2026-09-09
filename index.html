@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rinosoft | Prototipo ERP</title>
+  <link rel="icon" type="image/png" href="favicon-rinosoft.png">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <section id="public-home" class="public-home">
+    <header class="public-header"><a class="public-brand" href="#inicio"><img src="logo-rinosoft.png" alt="Rinosoft"></a><nav class="public-nav" aria-label="Menú institucional"><a href="#empresa">Empresa</a><a href="#soluciones">Soluciones</a><a href="#colaboradores">Colaboradores</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav></header>
+    <main id="inicio" class="public-main">
+      <div class="public-hero"><p class="eyebrow">TECNOLOGIA QUE IMPULSA TU EMPRESA</p><h1>Rinosoft</h1><p class="public-lead">Comercialización, implementación y soporte de soluciones tecnológicas para organizaciones de todos los tamaños.</p></div>
+      <section id="empresa" class="company-band"><div><span class="public-kicker">EMPRESA B2B</span><h2>Tecnología que convierte procesos en resultados.</h2><p>Rinosoft proporciona la infraestructura, herramientas y servicios necesarios para que las empresas operen mejor mediante tecnología.</p></div><div class="company-facts"><span><strong>4</strong> líneas de solución</span><span><strong>6</strong> áreas conectadas</span><span><strong>1</strong> plataforma operativa</span></div></section>
+      <section id="soluciones" class="public-section"><div class="section-heading"><p class="public-kicker">SOLUCIONES</p><h2>Una base tecnológica para crecer.</h2></div><div class="solution-grid"><article><span class="solution-index">01</span><h3>Hardware empresarial</h3><p>Computadoras, laptops, estaciones de trabajo, servidores, almacenamiento, redes y periféricos.</p></article><article><span class="solution-index">02</span><h3>Software profesional</h3><p>Sistemas operativos, productividad, seguridad, administración, contabilidad y soluciones empresariales.</p></article><article><span class="solution-index">03</span><h3>Infraestructura TI</h3><p>Servidores, redes, respaldos y soluciones en la nube para una operación confiable.</p></article><article><span class="solution-index">04</span><h3>Servicios profesionales</h3><p>Instalación, configuración, implementación, soporte, mantenimiento y asesoría tecnológica.</p></article></div></section>
+      <section id="servicios" class="public-access"><div><p class="public-kicker">ESPACIO DE TRABAJO</p><h2>Una plataforma para cada responsabilidad.</h2><p>Consulta contratos, proyectos, compras, almacén, finanzas, RH y operación con accesos diferenciados.</p></div></section>
+      <section id="contacto" class="contact-section"><div><p class="public-kicker">CONTACTO</p><h2>Hablemos de tu operación.</h2><p>Un equipo preparado para acompañar tus proyectos de tecnología empresarial.</p></div><div class="contact-details"><strong>Rinosoft</strong><span>contacto@rinosoft.test</span><span>+52 55 0000 0000</span><span>Ciudad de México · México</span></div></section>
+      <section id="colaboradores" class="public-colaboradores public-section"><div class="section-heading"><p class="public-kicker">COLABORADORES</p><h2>Acceso a la plataforma y reembolsos para trabajadores activos.</h2></div><div class="public-employee-access"><div class="public-employee-panel"><label>ID de trabajador<input id="public-worker-id" type="text" placeholder="Ej. RH-0001" aria-label="ID de trabajador"></label><div class="public-employee-actions"><button id="public-worker-login" class="public-primary-button" type="button">Acceder a la plataforma</button><button id="public-worker-reimbursement" class="public-outline-button" type="button">Solicitar reembolso</button></div></div><div class="public-employee-status" id="public-worker-status">Ingresa tu ID para validar que eres un colaborador activo.</div></div></section>
+    </main>
+    <footer class="public-footer">Rinosoft · Prototipo empresarial local · 2026</footer>
+  </section>
+  <div id="platform-login" class="platform-login" hidden>
+    <div class="platform-login-dialog" role="dialog" aria-modal="true" aria-labelledby="platform-login-title">
+      <button id="platform-login-close" class="platform-login-close" type="button" aria-label="Cerrar">&times;</button>
+      <p class="public-kicker">ACCESO SEGURO</p>
+      <h2 id="platform-login-title">Ingresar a la plataforma</h2>
+      <p>Usa tu ID de trabajador y contraseña para abrir tu espacio de trabajo.</p>
+      <form id="platform-login-form" class="platform-login-form">
+        <label>ID de trabajador<input name="loginId" type="text" placeholder="Ej. DG-0001" autocomplete="username" required></label>
+        <label>Contraseña<input name="password" type="password" placeholder="Escribe tu contraseña" autocomplete="current-password" required></label>
+        <div id="platform-login-status" class="platform-login-status" role="status"></div>
+        <button class="public-primary-button" type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+  <div id="app" class="app-shell" hidden>
+    <aside class="sidebar">
+      <div class="brand" aria-label="Rinosoft"><img class="brand-logo" src="logo-rinosoft.png" alt="Rinosoft - Tecnologia que impulsa tu empresa"></div>
+      <div class="workspace-label">ESPACIO DE TRABAJO</div>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal"></nav>
+      <div class="sidebar-footer"><span class="status-dot"></span> Entorno de demostración</div>
+      <button type="button" class="sidebar-exit" id="sidebar-exit">Salir del espacio de trabajo</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><p class="eyebrow">CONTROL EMPRESARIAL</p><h1 id="page-title">Panel general</h1></div>
+        <div class="topbar-actions">
+          <button id="public-exit" class="public-outline-button" type="button">Salir del espacio de trabajo</button>
+          <div class="backup-actions" aria-label="Respaldos locales"><button id="export-backup" class="backup-button" type="button">Exportar respaldo</button><button id="import-backup" class="backup-button" type="button">Importar respaldo</button><input id="backup-file" type="file" accept="application/json,.json" hidden></div>
+          <label class="user-picker">Usuario activo <select id="user-select"></select></label>
+          <div id="user-avatar" class="avatar">DG</div>
+        </div>
+      </header>
+      <section id="content" class="content-area" aria-live="polite"></section>
+    </main>
+  </div>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
